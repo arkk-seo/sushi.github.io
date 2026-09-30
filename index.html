@@ -1,0 +1,932 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#08050d" />
+    <meta name="description" content="โปรโมชันพิเศษ ฝาก 10 รับทันที 100 เล่นได้ทุกเกม ทุก Gen จำกัด 10,000 สิทธิ์" />
+    <title>ฝาก 10 รับทันที 100 | SACASINO Halloween</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Noto+Sans+Thai:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="preload" href="assets/halloween-casino-hero.webp" as="image" type="image/webp" fetchpriority="high" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2308050d'/%3E%3Cpath d='M16 37c0-14 7-22 16-22s16 8 16 22c0 9-7 14-16 14S16 46 16 37Z' fill='%23ff7a18'/%3E%3Cpath d='M30 15c0-5 4-8 9-7-3 2-4 5-3 8' fill='none' stroke='%239b5cff' stroke-width='5' stroke-linecap='round'/%3E%3Cpath d='m22 33 7 3-7 3m20-6-7 3 7 3M27 44h10' fill='none' stroke='%2308050d' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+    <style>
+      :root {
+        color-scheme: dark;
+        --ink: #f8f3ff;
+        --muted: #bfb4cc;
+        --night: #08050d;
+        --night-soft: #110a19;
+        --violet: #9b5cff;
+        --violet-bright: #bd8cff;
+        --ember: #ff7a18;
+        --ember-light: #ffb04d;
+        --gold: #f4c66a;
+        --line: rgba(255, 255, 255, 0.12);
+        --panel: rgba(15, 9, 23, 0.76);
+        --font-body: "Noto Sans Thai", "Leelawadee UI", Tahoma, sans-serif;
+        --font-display: "Chakra Petch", "Noto Sans Thai", sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+        background: var(--night);
+      }
+
+      body {
+        margin: 0;
+        min-width: 320px;
+        overflow-x: hidden;
+        background:
+          radial-gradient(circle at 15% 55%, rgba(114, 39, 184, 0.11), transparent 26rem),
+          var(--night);
+        color: var(--ink);
+        font-family: var(--font-body);
+        font-size: 16px;
+        line-height: 1.7;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      body::before {
+        position: fixed;
+        inset: 0;
+        z-index: 20;
+        pointer-events: none;
+        content: "";
+        background-image: linear-gradient(rgba(255,255,255,.018) 1px, transparent 1px);
+        background-size: 100% 4px;
+        mix-blend-mode: soft-light;
+        opacity: .45;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      button,
+      a {
+        -webkit-tap-highlight-color: transparent;
+      }
+
+      .skip-link {
+        position: fixed;
+        top: 8px;
+        left: 8px;
+        z-index: 99;
+        padding: .65rem 1rem;
+        border-radius: 999px;
+        background: white;
+        color: #14091f;
+        transform: translateY(-150%);
+        transition: transform .2s ease;
+      }
+
+      .skip-link:focus {
+        transform: translateY(0);
+      }
+
+      .shell {
+        width: min(1180px, calc(100% - 40px));
+        margin-inline: auto;
+      }
+
+      .site-header {
+        position: absolute;
+        inset: 0 0 auto;
+        z-index: 10;
+        padding: 20px 0;
+      }
+
+      .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+      }
+
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+        font-family: var(--font-display);
+        font-size: 1.1rem;
+        font-weight: 700;
+        letter-spacing: .12em;
+      }
+
+      .brand-mark {
+        display: grid;
+        width: 40px;
+        height: 40px;
+        place-items: center;
+        border: 1px solid rgba(255, 176, 77, .5);
+        border-radius: 12px;
+        background: linear-gradient(145deg, rgba(255, 122, 24, .22), rgba(155, 92, 255, .2));
+        box-shadow: 0 0 25px rgba(255, 122, 24, .14), inset 0 0 18px rgba(255, 255, 255, .06);
+        color: var(--ember-light);
+        letter-spacing: 0;
+      }
+
+      .nav-link {
+        border-bottom: 1px solid rgba(255,255,255,.28);
+        color: #eee7f6;
+        font-size: .92rem;
+        text-decoration: none;
+        transition: color .2s ease, border-color .2s ease;
+      }
+
+      .nav-link:hover,
+      .nav-link:focus-visible {
+        border-color: var(--ember-light);
+        color: var(--ember-light);
+      }
+
+      .hero {
+        position: relative;
+        isolation: isolate;
+        min-height: 820px;
+        display: grid;
+        align-items: center;
+        overflow: hidden;
+        border-bottom: 1px solid rgba(255,255,255,.08);
+        background: #07050b;
+      }
+
+      .hero::before {
+        position: absolute;
+        inset: 0;
+        z-index: -3;
+        content: "";
+        background-image: url("assets/halloween-casino-hero.webp");
+        background-position: center center;
+        background-size: cover;
+        filter: saturate(1.06) contrast(1.04);
+        transform: scale(1.015);
+        animation: reveal 1.2s cubic-bezier(.2,.7,.2,1) both;
+      }
+
+      .hero::after {
+        position: absolute;
+        inset: 0;
+        z-index: -2;
+        content: "";
+        background:
+          linear-gradient(90deg, rgba(5,3,9,.96) 0%, rgba(7,4,12,.89) 31%, rgba(8,5,13,.4) 60%, rgba(5,3,9,.12) 100%),
+          linear-gradient(0deg, #08050d 0%, transparent 25%, rgba(4,2,8,.15) 100%);
+      }
+
+      .hero-glow {
+        position: absolute;
+        z-index: -1;
+        width: 40rem;
+        height: 40rem;
+        left: -25rem;
+        top: 8rem;
+        border-radius: 50%;
+        background: rgba(155, 92, 255, .22);
+        filter: blur(80px);
+        pointer-events: none;
+      }
+
+      .hero-content {
+        width: min(690px, 60%);
+        padding: 140px 0 110px;
+        animation: rise .8s .18s cubic-bezier(.2,.7,.2,1) both;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        margin: 0 0 20px;
+        color: var(--ember-light);
+        font-family: var(--font-display);
+        font-size: .84rem;
+        font-weight: 700;
+        letter-spacing: .19em;
+        text-transform: uppercase;
+      }
+
+      .eyebrow::before {
+        width: 34px;
+        height: 1px;
+        content: "";
+        background: currentColor;
+        box-shadow: 0 0 12px currentColor;
+      }
+
+      h1,
+      h2,
+      p {
+        margin-top: 0;
+      }
+
+      h1 {
+        margin-bottom: 20px;
+        font-family: var(--font-display);
+        font-size: clamp(3.6rem, 8.7vw, 7.6rem);
+        font-weight: 700;
+        line-height: .85;
+        letter-spacing: -.055em;
+        text-wrap: balance;
+      }
+
+      .offer-line {
+        display: block;
+      }
+
+      .offer-line--main {
+        color: transparent;
+        background: linear-gradient(105deg, #fff3d7 6%, var(--ember-light) 40%, var(--ember) 74%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        filter: drop-shadow(0 7px 28px rgba(255, 122, 24, .24));
+      }
+
+      .hero-copy {
+        max-width: 590px;
+        margin-bottom: 30px;
+        color: #d9cfdf;
+        font-size: clamp(1rem, 1.6vw, 1.17rem);
+      }
+
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-bottom: 36px;
+      }
+
+      .button {
+        position: relative;
+        display: inline-flex;
+        min-height: 54px;
+        align-items: center;
+        justify-content: center;
+        padding: 12px 24px;
+        overflow: hidden;
+        border: 1px solid transparent;
+        border-radius: 14px;
+        font-weight: 800;
+        line-height: 1.3;
+        text-align: center;
+        text-decoration: none;
+        transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease, background .2s ease;
+      }
+
+      .button:hover {
+        transform: translateY(-2px);
+      }
+
+      .button:focus-visible,
+      .nav-link:focus-visible,
+      .brand:focus-visible,
+      .text-link:focus-visible {
+        outline: 3px solid rgba(189, 140, 255, .75);
+        outline-offset: 4px;
+      }
+
+      .button--primary {
+        background: linear-gradient(135deg, #ff9c32, #f05a0b);
+        box-shadow: 0 12px 34px rgba(255, 102, 13, .25), inset 0 1px rgba(255,255,255,.4);
+        color: #170807;
+      }
+
+      .button--primary::after {
+        position: absolute;
+        inset: -100% auto -100% -35%;
+        width: 22%;
+        content: "";
+        background: rgba(255,255,255,.38);
+        transform: rotate(20deg);
+        transition: left .5s ease;
+      }
+
+      .button--primary:hover::after {
+        left: 125%;
+      }
+
+      .button--secondary {
+        border-color: rgba(255,255,255,.22);
+        background: rgba(10, 6, 15, .55);
+        backdrop-filter: blur(12px);
+        color: white;
+      }
+
+      .button--secondary:hover {
+        border-color: rgba(189, 140, 255, .6);
+        background: rgba(77, 38, 115, .28);
+      }
+
+      .quick-facts {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px 12px;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+      }
+
+      .quick-facts li {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 12px;
+        border: 1px solid rgba(255,255,255,.11);
+        border-radius: 999px;
+        background: rgba(10,6,15,.46);
+        color: #e8dff0;
+        font-size: .9rem;
+        backdrop-filter: blur(8px);
+      }
+
+      .quick-facts li::before {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        content: "";
+        background: var(--ember);
+        box-shadow: 0 0 12px var(--ember);
+      }
+
+      main {
+        position: relative;
+      }
+
+      .conditions {
+        position: relative;
+        padding: 100px 0 110px;
+        background:
+          radial-gradient(circle at 80% 10%, rgba(155, 92, 255, .11), transparent 26rem),
+          linear-gradient(180deg, #08050d, #0d0714 48%, #08050d);
+      }
+
+      .conditions::before {
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        content: "";
+        background-image:
+          radial-gradient(circle at center, rgba(255,255,255,.2) 1px, transparent 1px);
+        background-size: 26px 26px;
+        mask-image: linear-gradient(90deg, transparent, black 40%, black 60%, transparent);
+        opacity: .13;
+      }
+
+      .section-heading {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 48px;
+        align-items: end;
+        margin-bottom: 42px;
+      }
+
+      .section-heading h2 {
+        margin-bottom: 0;
+        font-family: var(--font-display);
+        font-size: clamp(2.4rem, 5vw, 4.2rem);
+        line-height: 1.05;
+        letter-spacing: -.04em;
+      }
+
+      .section-heading p:last-child {
+        margin-bottom: 4px;
+        color: var(--muted);
+      }
+
+      .term-grid {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 16px;
+      }
+
+      .term-card {
+        position: relative;
+        grid-column: span 4;
+        min-height: 230px;
+        padding: 26px;
+        overflow: hidden;
+        border: 1px solid var(--line);
+        border-radius: 22px;
+        background: linear-gradient(145deg, rgba(26,16,37,.9), rgba(12,8,18,.92));
+        box-shadow: 0 18px 60px rgba(0,0,0,.22);
+        transition: transform .25s ease, border-color .25s ease;
+      }
+
+      .term-card:hover {
+        transform: translateY(-5px);
+        border-color: rgba(255, 158, 49, .36);
+      }
+
+      .term-card:nth-child(4),
+      .term-card:nth-child(5) {
+        grid-column: span 6;
+        min-height: 200px;
+      }
+
+      .term-card::after {
+        position: absolute;
+        right: -60px;
+        bottom: -60px;
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        content: "";
+        background: rgba(155, 92, 255, .1);
+        filter: blur(5px);
+      }
+
+      .term-card:nth-child(even)::after {
+        background: rgba(255, 122, 24, .1);
+      }
+
+      .term-index {
+        display: block;
+        margin-bottom: 25px;
+        color: var(--violet-bright);
+        font-family: var(--font-display);
+        font-size: .76rem;
+        font-weight: 700;
+        letter-spacing: .15em;
+      }
+
+      .term-value {
+        display: block;
+        margin-bottom: 7px;
+        color: white;
+        font-family: var(--font-display);
+        font-size: clamp(2.2rem, 4vw, 3.4rem);
+        font-weight: 700;
+        line-height: 1;
+        letter-spacing: -.04em;
+      }
+
+      .term-label {
+        color: var(--muted);
+        font-size: 1rem;
+      }
+
+      .fine-print-wrap {
+        position: relative;
+        display: grid;
+        grid-template-columns: .72fr 1.28fr;
+        gap: 32px;
+        align-items: start;
+        padding-top: 56px;
+      }
+
+      .fine-print-title {
+        position: sticky;
+        top: 28px;
+      }
+
+      .fine-print-title h2 {
+        margin-bottom: 14px;
+        font-family: var(--font-display);
+        font-size: clamp(2rem, 3vw, 3rem);
+        line-height: 1.1;
+        letter-spacing: -.03em;
+      }
+
+      .fine-print-title p {
+        color: var(--muted);
+      }
+
+      .fine-print {
+        padding: 28px;
+        border: 1px solid var(--line);
+        border-radius: 22px;
+        background: rgba(13,8,20,.75);
+      }
+
+      .fine-print ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+      }
+
+      .fine-print li {
+        position: relative;
+        padding-left: 30px;
+        color: #ded5e5;
+      }
+
+      .fine-print li + li {
+        margin-top: 18px;
+      }
+
+      .fine-print li::before {
+        position: absolute;
+        top: .64em;
+        left: 0;
+        width: 10px;
+        height: 10px;
+        border: 2px solid var(--ember-light);
+        border-radius: 50%;
+        content: "";
+        box-shadow: 0 0 12px rgba(255, 122, 24, .25);
+      }
+
+      .warning {
+        margin-top: 22px;
+        padding: 20px 20px 20px 22px;
+        border-left: 3px solid var(--ember);
+        border-radius: 4px 14px 14px 4px;
+        background: rgba(255, 122, 24, .08);
+        color: #eadfe9;
+      }
+
+      .warning strong {
+        color: var(--ember-light);
+      }
+
+      .text-link {
+        display: inline-block;
+        margin-top: 24px;
+        border-bottom: 1px solid rgba(189,140,255,.45);
+        color: var(--violet-bright);
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      .text-link:hover {
+        border-color: currentColor;
+      }
+
+      .final-cta {
+        position: relative;
+        isolation: isolate;
+        padding: 96px 0;
+        overflow: hidden;
+        border-top: 1px solid rgba(255,255,255,.08);
+        text-align: center;
+      }
+
+      .final-cta::before {
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        content: "";
+        background:
+          radial-gradient(circle at 50% 120%, rgba(255, 122, 24, .24), transparent 40%),
+          radial-gradient(circle at 30% 0%, rgba(155, 92, 255, .2), transparent 35%),
+          #0b0711;
+      }
+
+      .final-cta h2 {
+        max-width: 780px;
+        margin: 0 auto 15px;
+        font-family: var(--font-display);
+        font-size: clamp(2.4rem, 5vw, 4.7rem);
+        line-height: 1;
+        letter-spacing: -.04em;
+      }
+
+      .final-cta p {
+        margin-bottom: 28px;
+        color: var(--muted);
+      }
+
+      footer {
+        padding: 24px 0 96px;
+        border-top: 1px solid rgba(255,255,255,.07);
+        background: #08050d;
+        color: #998ea5;
+        font-size: .86rem;
+      }
+
+      .footer-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+      }
+
+      .footer-inner p {
+        margin: 0;
+      }
+
+      .mobile-cta {
+        position: fixed;
+        z-index: 30;
+        right: 16px;
+        bottom: 16px;
+        left: 16px;
+        display: none;
+        min-height: 54px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px;
+        background: linear-gradient(135deg, #ff9c32, #ef5a0c);
+        box-shadow: 0 16px 45px rgba(0,0,0,.55), 0 5px 26px rgba(255, 102, 13, .28);
+        color: #170807;
+        font-weight: 900;
+        text-decoration: none;
+        opacity: 0;
+        transform: translateY(140%);
+        transition: opacity .25s ease, transform .25s ease;
+      }
+
+      .mobile-cta.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      @keyframes rise {
+        from { opacity: 0; transform: translateY(22px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+
+      @keyframes reveal {
+        from { opacity: 0; transform: scale(1.06); }
+        to { opacity: 1; transform: scale(1.015); }
+      }
+
+      @media (max-width: 900px) {
+        .hero {
+          min-height: 880px;
+          align-items: end;
+        }
+
+        .hero::before {
+          background-position: 62% center;
+        }
+
+        .hero::after {
+          background:
+            linear-gradient(0deg, #08050d 0%, rgba(7,4,12,.9) 32%, rgba(5,3,9,.22) 70%, rgba(5,3,9,.36) 100%),
+            linear-gradient(90deg, rgba(5,3,9,.88), transparent 65%);
+        }
+
+        .hero-content {
+          width: min(680px, 100%);
+          padding: 400px 0 82px;
+        }
+
+        .section-heading {
+          grid-template-columns: 1fr;
+          gap: 18px;
+        }
+
+        .term-card,
+        .term-card:nth-child(4),
+        .term-card:nth-child(5) {
+          grid-column: span 6;
+        }
+
+        .term-card:last-child {
+          grid-column: span 12;
+        }
+      }
+
+      @media (max-width: 680px) {
+        .shell {
+          width: min(100% - 28px, 1180px);
+        }
+
+        .site-header {
+          padding-top: 14px;
+        }
+
+        .nav-link {
+          display: none;
+        }
+
+        .hero {
+          min-height: 830px;
+        }
+
+        .hero::before {
+          background-position: 68% top;
+          background-size: auto 67%;
+          background-repeat: no-repeat;
+        }
+
+        .hero-content {
+          padding: 390px 0 64px;
+        }
+
+        h1 {
+          font-size: clamp(3.5rem, 18vw, 5.2rem);
+        }
+
+        .hero-copy {
+          font-size: 1rem;
+        }
+
+        .hero-actions {
+          display: grid;
+        }
+
+        .button {
+          width: 100%;
+        }
+
+        .quick-facts {
+          gap: 8px;
+        }
+
+        .quick-facts li {
+          font-size: .82rem;
+        }
+
+        .conditions {
+          padding: 76px 0 80px;
+        }
+
+        .term-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .term-card,
+        .term-card:nth-child(4),
+        .term-card:nth-child(5),
+        .term-card:last-child {
+          grid-column: auto;
+          min-height: 170px;
+        }
+
+        .term-index {
+          margin-bottom: 16px;
+        }
+
+        .fine-print-wrap {
+          grid-template-columns: 1fr;
+          gap: 18px;
+          padding-top: 46px;
+        }
+
+        .fine-print-title {
+          position: static;
+        }
+
+        .fine-print {
+          padding: 22px 18px;
+        }
+
+        .final-cta {
+          padding: 78px 0 84px;
+        }
+
+        footer {
+          padding-bottom: 92px;
+        }
+
+        .footer-inner {
+          align-items: flex-start;
+          flex-direction: column;
+          gap: 8px;
+        }
+
+        .mobile-cta {
+          display: flex;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html { scroll-behavior: auto; }
+        *, *::before, *::after {
+          animation-duration: .01ms !important;
+          animation-iteration-count: 1 !important;
+          scroll-behavior: auto !important;
+          transition-duration: .01ms !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#conditions">ข้ามไปดูเงื่อนไข</a>
+
+    <header class="site-header">
+      <nav class="nav shell" aria-label="เมนูหลัก">
+        <a class="brand" href="https://sacasino.ad/" target="_blank" rel="noopener noreferrer" aria-label="ไปยัง SACASINO">
+          <span class="brand-mark" aria-hidden="true">SA</span>
+          <span>SACASINO</span>
+        </a>
+        <a class="nav-link" href="#conditions">ดูเงื่อนไขโปรโมชัน</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="promo-title">
+        <div class="hero-glow" aria-hidden="true"></div>
+        <div class="shell">
+          <div class="hero-content">
+            <p class="eyebrow">Halloween Special Promotion</p>
+            <h1 id="promo-title">
+              <span class="offer-line">ฝาก 10</span>
+              <span class="offer-line offer-line--main">รับทันที 100</span>
+            </h1>
+            <p class="hero-copy">คืนนี้ให้ความสนุกเป็นฝ่ายหลอกคุณก่อน — โปรแรง เล่นได้ทุกเกม ทุก Gen พร้อมลุ้นถอนได้สูงสุด 300 บาท</p>
+            <div class="hero-actions">
+              <a class="button button--primary" href="https://sacasino.ad/" target="_blank" rel="noopener noreferrer">รับโปรโมชันนี้</a>
+              <a class="button button--secondary" href="#conditions">อ่านเงื่อนไขก่อน</a>
+            </div>
+            <ul class="quick-facts" aria-label="ข้อมูลโปรโมชันโดยย่อ">
+              <li>ทุก Gen</li>
+              <li>เล่นได้ทุกเกม</li>
+              <li>จำกัด 10,000 สิทธิ์</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="conditions" id="conditions" aria-labelledby="conditions-title">
+        <div class="shell">
+          <div class="section-heading" data-reveal>
+            <div>
+              <p class="eyebrow">Promotion Details</p>
+              <h2 id="conditions-title">รู้เงื่อนไขครบ<br />ก่อนเริ่มสนุก</h2>
+            </div>
+            <p>ตัวเลขสำคัญทั้งหมดสรุปไว้ให้แล้ว ตรวจสอบรายละเอียดให้เรียบร้อยก่อนรับสิทธิ์โปรโมชัน</p>
+          </div>
+
+          <div class="term-grid">
+            <article class="term-card" data-reveal>
+              <span class="term-index">01 / TURNOVER</span>
+              <strong class="term-value">1,000</strong>
+              <span class="term-label">ทำยอดให้ได้ถึง 1,000</span>
+            </article>
+            <article class="term-card" data-reveal>
+              <span class="term-index">02 / MAX WITHDRAW</span>
+              <strong class="term-value">300 บาท</strong>
+              <span class="term-label">ถอนได้สูงสุด</span>
+            </article>
+            <article class="term-card" data-reveal>
+              <span class="term-index">03 / ACCESS</span>
+              <strong class="term-value">ทุก Gen</strong>
+              <span class="term-label">เข้าร่วมได้ทุก Gen</span>
+            </article>
+            <article class="term-card" data-reveal>
+              <span class="term-index">04 / GAME</span>
+              <strong class="term-value">ทุกเกม</strong>
+              <span class="term-label">เลือกเล่นได้อย่างเต็มที่</span>
+            </article>
+            <article class="term-card" data-reveal>
+              <span class="term-index">05 / LIMITED</span>
+              <strong class="term-value">10,000</strong>
+              <span class="term-label">สิทธิ์เท่านั้น</span>
+            </article>
+          </div>
+
+          <div class="fine-print-wrap" data-reveal>
+            <div class="fine-print-title">
+              <p class="eyebrow">Important</p>
+              <h2>ข้อกำหนดสำคัญ</h2>
+              <p>โปรดอ่านรายละเอียดทั้งหมดเพื่อรักษาสิทธิ์ของคุณ</p>
+            </div>
+            <div class="fine-print">
+              <ul>
+                <li>เงื่อนไขทำยอดให้ได้ถึง 1,000</li>
+                <li>ถอนได้สูงสุด 300 บาท</li>
+                <li>ทุก Gen และเล่นได้ทุกเกม</li>
+                <li>จำกัด 10,000 สิทธิ์</li>
+              </ul>
+              <p class="warning"><strong>ข้อควรทราบ:</strong> หากพบว่ากระทำการทุจริตไม่ว่ากรณีใด ๆ ทั้งสิ้นที่นำมาซึ่งเทิร์นโอเวอร์ผิดปกติ หรือมีการเดิมพันทั้งสองฝั่ง ทางทีมงานจะทำการยึดคืนเครดิตทั้งหมด โดยไม่ต้องแจ้งให้ทราบล่วงหน้า</p>
+              <a class="text-link" href="https://sacasino.ad/term-and-condition" target="_blank" rel="noopener noreferrer">อ่านเงื่อนไขและกติกาพื้นฐานฉบับเต็ม</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="final-cta" aria-labelledby="final-title">
+        <div class="shell" data-reveal>
+          <p class="eyebrow">Limited Halloween Drop</p>
+          <h2 id="final-title">ฝากเพียง 10<br />รับความสนุกเต็ม 100</h2>
+          <p>ตรวจสอบเงื่อนไขให้พร้อม แล้วไปรับสิทธิ์ที่ SACASINO</p>
+          <a class="button button--primary" href="https://sacasino.ad/" target="_blank" rel="noopener noreferrer">ไปที่ SACASINO</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-inner shell">
+        <p>© <span id="year"></span> SACASINO — Halloween Promotion</p>
+        <p>โปรดตรวจสอบข้อกำหนดก่อนเข้าร่วมโปรโมชัน</p>
+      </div>
+    </footer>
+
+    <a class="mobile-cta" href="https://sacasino.ad/" target="_blank" rel="noopener noreferrer">รับโปรโมชัน ฝาก 10 รับ 100</a>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      const hero = document.querySelector(".hero");
+      const mobileCta = document.querySelector(".mobile-cta");
+      if ("IntersectionObserver" in window && hero && mobileCta) {
+        const heroObserver = new IntersectionObserver(([entry]) => {
+          mobileCta.classList.toggle("is-visible", !entry.isIntersecting);
+        }, { threshold: 0.05 });
+        heroObserver.observe(hero);
+      }
+    </script>
+  </body>
+</html>
